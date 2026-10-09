@@ -17,3 +17,5 @@ console.log(jsUser.age)
 
 console.log(jsUser["Full Name"]) // thesse only posible way to access string
 console.log(jsUser[mySym]) 
+
+jsUser.email="karanxop@gmail.com" // used to change the  values inside oject  
