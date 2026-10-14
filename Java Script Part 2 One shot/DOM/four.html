@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM LEC 4</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <ul class="Language">
+        <li>Javaascript</li>
+        
+
+    </ul>
+
+<script>
+    function addLanguage(langName){
+       const li=  document.createElement('li')
+    li.innerHTML = `${langName}`
+    document.querySelector('.langauge').
+    appendChild(li)
+    }
+    addLanguage("C++")
+    addLanguage("TypeScript")
+
+// optimise approch to add 
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('java')
+
+    //edt
+
+    document.querySelector("li:nth-child(2)")
+    secondLang.innerHTML='mojo'
+
+    const newLi = document.createElement('li')
+    
+</script>
+    
+</body>
+</html>

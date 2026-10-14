@@ -28,4 +28,4 @@ switch (month) {
     default:
         console.log("Default Case Exected ")
         break;
-}
+} 
