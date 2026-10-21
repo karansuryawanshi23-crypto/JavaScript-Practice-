@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a target="_blank" href="karan.com">Karan</a>
+    </nav>
+    <div id="Wrapper">
+        <h1>Number Guessing game </h1>
+    <p>ry and Guess a random number between 1 and 100.</p>
+    <p>you have 10 attempts to guess the right nuber .</p>
+    </br>
+        <form class="form">
+            <label for="guessField" id="guess">Gues a number</label>
+            <input type="text" id ="guessField" class="guessField">
+            <input type="submit" id="subt" value="submit guess" class="guessSubmit">  
+        </form>
+
+        <div class="resultPara"> 
+            <p>previouus Guess: <span class="guesses"></span></p>
+            <p>Guess Remaining : <span class="lastResult">10</span></p>
+            <p class="low0rHi"></p>
+
+        </div>
+
+    </div>
+    <script src="guess.js"></script>
+    
+    
+</body>
+</html>
