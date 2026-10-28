@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeout And Interval</title>
+</head>
+<body>
+    <h1>Welcome! Wait For Magic  </h1>
+    <button id="Stop">See</button>
+    
+</body>
+<script>
+
+    const sayName= function(){
+
+    console.log( "Karan Suryawanshi")}
+
+    const ChnageText = function(){
+        document.querySelector('h1').
+        innerHTML = "Congratulations Karan You Cleared Our Interview Process You Got Offer Of 21LPA "
+    }
+
+    const changeMe = setTimeout(ChnageText,2000)
+    document.querySelector('#Stop').addEventListener
+    ('click',function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+</script>
+</html>

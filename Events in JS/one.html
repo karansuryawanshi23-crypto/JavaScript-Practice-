@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events In Js </title>
+</head>
+<body style="background-color: #414141 ; color: aliceblue; "> 
+    <h1>Amazing Images </h1>
+    <ul id="images">
+        <li><img width="200px" id="photoshop" src="https://imgs.search.brave.com/QV2IWQxYSnfTxSYgsQ_vPnkh9mtECyxXeOW3Oa_y5i4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjUv/NDU1LzU2MS9zbWFs/bC9uYXR1cmUtYmVh/dXR5LXBpY3R1cmUt/cGhvdG8uanBn" alt="karan" onclick="alert('Nature Photo')"></li>
+        <li><img id="nature" width="200px" src="https://imgs.search.brave.com/QdjkXmXCPrG8-7y1QRBXzN_5TPQnECJEQakLlVL_zRs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/c3RvY2tzbmFwLmlv/L2ltZy10aHVtYnMv/MjgwaC9tb3VudGFp/bnMtY2xvdWRzX0E0/WTJRNjZFTDQuanBn" alt="NAture "></li>
+        <a id="youtube" style="color: yellow;" href="https://www.youtube.com/watch?v=_TjtAyMkiTI&t=9071s">Youtube Link</a>
+
+
+    </ul>
+
+
+    
+</body>
+<script>
+    // document.getElementById('nature').onclick=function(){
+    //     alert('Nature Click')
+    // }
+
+    document.querySelector('#images').addEventListener('click',function(e) {
+        console.log(e.target.tagName);
+    if(e.target.tagName=='IMG'){
+        console.log(e.target.id);
+    }
+        let removeIt=e.target.parentNode;
+        removeIt.remove();
+         
+    },false) 
+
+    document.querySelector('#youtube').addEventListener('click',function(e) {
+        e.preventDefault();
+    }, false)
+      
+</script>
+</html>
